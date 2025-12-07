@@ -1,0 +1,86 @@
+/* 
+ h1{
+background-color: pink;
+}
+
+ul{
+background-color: aquamarine;
+}
+
+h2{
+
+background-color: blue;
+}
+
+ /id base selection # based selection */
+
+/* #first{
+
+background-color: blue;
+
+#second{
+
+background-color: pink;
+
+} */
+
+
+
+/* class based selection and it can be repeat 
+.third {
+background-color: green ;
+}
+
+
+
+<group based selection >
+h1 , .third , #first{
+background-color: aqua;
+}
+
+
+h1{
+background-color: rgb(159, 19, 161)   //inki madad se hum koi bhi color generate kr skte hai 159 belongs to red
+// 19 belongs to green and 161 belong to blue .
+}
+
+CSS (Cascading style sheet )
+RGB
+(0-255)(0-255)(0-255) = total memory
+example -> 127 140 209
+bits        8 . 8  . 8 =24 bits = 3 byte 
+
+
+
+h1{
+background-color: rgba(159, 19, 161 , 0.5); //  a = transparency
+}
+
+h2{
+backgrounf-color: hsl(110,50%,30%) ;   // h= hue , s= saturation , l = lightness
+}
+
+h1{
+background-color: #639747;   //(it is a hexadecimal value )
+}
+
+63 =red
+97 =green
+47 =blue
+
+pixel = picture element
+   
+
+
+//font size 
+h1{
+font-size : 80px;
+}
+
+ul{
+font-size: 20px;
+}
+
+li{
+font-size: 1em;   //1*size of parent element
+}
