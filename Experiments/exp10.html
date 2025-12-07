@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Navbar</title>
+    <style>
+      body {
+        font-family: "Times New Roman";
+        margin: 50px;
+        background: #f9f9f9;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 25px;
+        padding: 15px;
+      }
+      .nav-links {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+      }
+      .actions {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+      .navbar {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(52, 69, 92);
+        color: white;
+        padding: 10px;
+      }
+      .nav-links a,
+      .actions a {
+        color: white;
+      }
+      section {
+        margin-bottom: 300px;
+      }
+      @media (max-width: 600px) {
+        body {
+          margin: 10px;
+          padding: 10px;
+        }
+
+        .navbar {
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          text-align: center;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 3px;
+          padding: 0;
+        }
+
+        .actions {
+          flex-direction: column;
+          justify-content: right;
+          gap: 3px;
+        }
+
+        .logo {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><h3>JBL</h3></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="actions">
+        <a>Cart 🛒</a>
+        <a>Login</a>
+      </div>
+    </nav>
+    <section>
+      <h2>Welcome to Shop it..!</h2>
+      <p>The only shopping platform</p>
+    </section>
+  </body>
+</html>

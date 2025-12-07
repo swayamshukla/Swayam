@@ -1,0 +1,81 @@
+<!-- Create Web page for Responsive Product Grid: create mobile-friendly designs with breakpoints -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .price {
+          font-weight: bold;
+          color: #007bff;
+         }
+        .grid-item h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .grid-item p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://observer.com/wp-content/uploads/sites/2/2022/04/image1-9.jpg" alt="Product 1">
+            <h3>Beardo</h3>
+            <p>Get rady in two minutes</p>
+            <p class="price">₹100</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://th.bing.com/th/id/R.84e34b841c91dca9263ff9bd626950ca?rik=UjqdCzxn4P%2f8UQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fa%2f5%2f7%2f1309961-full-size-kitkat-wallpaper-3000x1688-desktop.jpg&ehk=NSsOtD0iu0oWQI5UQh4c%2bKO4j5CjHFsMDUlG%2brx8OmQ%3d&risl=&pid=ImgRaw&r=0" alt="Product 2">
+            <h3>Kitkat</h3>
+            <p>Kitkat share moments with loved ones</p>
+            <p class="price">₹20</p>
+        </div>
+        <div class="grid-item">
+            <img src="data:image/webp;base64,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" alt="Product 3">
+            <h3>NIKE shoes</h3>
+            <p>Nike comfortable shoes for men.</p>
+            <p class="price">₹7999</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://th.bing.com/th/id/OIP.qh0HFl4Ld6sRVmLtS4zr3wHaEK?w=300&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1" alt="Product 4">
+            <h3>Can we be strangers again</h3>
+            <p>This book shares emotional stories.</p>
+            <p class="price">₹99</p>
+        </div>
+        <div class="grid-item">
+            <img src="https://th.bing.com/th/id/OIP.GYxMqW3-c0K23XzWFPYvawHaE8?w=290&h=193&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1" alt="Product 5">
+            <h3>Happy toy</h3>
+            <p>This is a happy toy.It always brings joy to children.</p>
+            <p class="price">₹999</p>
+        </div>
+    </div>
+</body>
+</html>
